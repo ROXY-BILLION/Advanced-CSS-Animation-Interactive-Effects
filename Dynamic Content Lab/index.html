@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore and filter a creative digital project archive.">
+    <title>PIXEL / ARCHIVE — Dynamic Content Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#" class="logo">PIXEL<span>/</span>ARCHIVE</a>
+
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <span class="edition">CREATIVE INDEX / 2026</span>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">A COLLECTION OF CREATIVE WORK</p>
+
+                <h1>
+                    Ideas made<br>
+                    <span>visible.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore a curated collection of digital experiences,
+                    visual identities and creative experiments.
+                </p>
+
+                <a href="#projects" class="hero-button">
+                    Explore archive
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+
+            <div class="hero-visual">
+                <img
+                    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85"
+                    alt="Creative modern workspace"
+                >
+                <span>THE CREATIVE INDEX — 001</span>
+            </div>
+        </section>
+
+        <!-- Project Archive -->
+        <section class="archive" id="projects">
+
+            <div class="archive-heading">
+                <div>
+                    <p class="eyebrow">DISCOVER OUR COLLECTION</p>
+                    <h2>Selected <span>projects.</span></h2>
+                </div>
+
+                <p class="archive-description">
+                    Find inspiration through our growing creative archive.
+                </p>
+            </div>
+
+            <!-- Search and Sorting -->
+            <div class="toolbar">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search projects..."
+                        aria-label="Search projects"
+                    >
+                </div>
+
+                <div class="sort-box">
+                    <label for="sortSelect">SORT BY</label>
+
+                    <select id="sortSelect">
+                        <option value="featured">Featured</option>
+                        <option value="name-asc">Name: A to Z</option>
+                        <option value="name-desc">Name: Z to A</option>
+                        <option value="year-desc">Newest first</option>
+                        <option value="year-asc">Oldest first</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- Category Filters -->
+            <div class="filter-list" id="filterList" aria-label="Filter projects by category">
+                <button class="filter-button active" data-category="all" aria-pressed="true">
+                    All Projects
+                </button>
+
+                <button class="filter-button" data-category="branding" aria-pressed="false">
+                    Branding
+                </button>
+
+                <button class="filter-button" data-category="websites" aria-pressed="false">
+                    Websites
+                </button>
+
+                <button class="filter-button" data-category="photography" aria-pressed="false">
+                    Photography
+                </button>
+
+                <button class="filter-button" data-category="architecture" aria-pressed="false">
+                    Architecture
+                </button>
+            </div>
+
+            <!-- Results Information -->
+            <div class="results-bar">
+                <p id="resultsCount" aria-live="polite">Showing projects</p>
+
+                <button id="clearFilters" class="clear-button">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    Reset filters
+                </button>
+            </div>
+
+            <!-- Dynamic Project Grid -->
+            <div class="project-grid" id="projectGrid"></div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState" hidden>
+                <i class="fa-solid fa-folder-open"></i>
+                <h3>No projects found</h3>
+                <p>Try another search term or category.</p>
+                <button id="emptyReset">Clear all filters</button>
+            </div>
+
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <p class="eyebrow">THE PURPOSE OF THE ARCHIVE</p>
+            <h2>Creative work deserves to be <span>discovered.</span></h2>
+            <p>
+                A well-organized collection makes it easier to explore,
+                compare and discover work that matters.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#" class="logo">PIXEL<span>/</span>ARCHIVE</a>
+        <p>A living collection of creative ideas.</p>
+        <span>© 2026 PIXEL ARCHIVE</span>
+    </footer>
+
+</body>
+</html>
