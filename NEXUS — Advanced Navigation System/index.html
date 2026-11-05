@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS — Interactive Navigation</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="site-header">
+        <a href="#home" class="logo">
+            NEXUS<span>.</span>
+        </a>
+
+        <nav class="desktop-nav" id="desktopNav" aria-label="Main navigation">
+
+            <a href="#home" class="nav-link active">Home</a>
+
+            <!-- Dropdown -->
+            <div class="dropdown">
+                <button
+                    class="nav-link dropdown-toggle"
+                    id="servicesToggle"
+                    aria-expanded="false"
+                    aria-controls="servicesMenu"
+                >
+                    Services
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu" id="servicesMenu">
+                    <a href="#design">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                        <span>
+                            <strong>Digital Design</strong>
+                            <small>Creative digital experiences</small>
+                        </span>
+                    </a>
+
+                    <a href="#development">
+                        <i class="fa-solid fa-code"></i>
+                        <span>
+                            <strong>Development</strong>
+                            <small>Modern web solutions</small>
+                        </span>
+                    </a>
+
+                    <a href="#strategy">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <span>
+                            <strong>Strategy</strong>
+                            <small>Ideas that drive growth</small>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+
+        </nav>
+
+        <a href="#contact" class="header-button">Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+        <!-- Mobile Menu Button -->
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobileNav"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" inert>
+
+        <a href="#home" class="mobile-link">Home</a>
+
+        <div class="mobile-dropdown">
+            <button
+                class="mobile-dropdown-toggle"
+                id="mobileServicesToggle"
+                aria-expanded="false"
+                aria-controls="mobileServicesMenu"
+            >
+                Services
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="mobile-dropdown-menu" id="mobileServicesMenu" inert>
+                <a href="#design">Digital Design</a>
+                <a href="#development">Development</a>
+                <a href="#strategy">Strategy</a>
+            </div>
+        </div>
+
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+
+        <a href="#contact" class="mobile-cta">Start a Project <i class="fa-solid fa-arrow-right"></i></a>
+
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <p class="eyebrow">DIGITAL EXPERIENCES / 2026</p>
+
+                <h1>
+                    Navigation<br>
+                    <span>with intention.</span>
+                </h1>
+
+                <p>
+                    A modern navigation experience designed to make
+                    digital journeys clear, smooth and engaging.
+                </p>
+
+                <a href="#design" class="hero-button">
+                    Explore the experience
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+
+            <div class="hero-decoration">
+                <div class="decoration-ring ring-one"></div>
+                <div class="decoration-ring ring-two"></div>
+                <div class="decoration-center">
+                    <i class="fa-solid fa-compass"></i>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Content Sections -->
+        <section class="content-section" id="design">
+            <span>01 / DIGITAL DESIGN</span>
+            <h2>Design with purpose.</h2>
+            <p>Every interaction should help users understand where to go next.</p>
+        </section>
+
+        <section class="content-section alternate" id="development">
+            <span>02 / DEVELOPMENT</span>
+            <h2>Build with precision.</h2>
+            <p>Reliable structures make digital experiences easier to navigate.</p>
+        </section>
+
+        <section class="content-section" id="strategy">
+            <span>03 / STRATEGY</span>
+            <h2>Think beyond today.</h2>
+            <p>Good navigation grows with the needs of its users.</p>
+        </section>
+
+        <section class="content-section alternate" id="about">
+            <span>04 / ABOUT NEXUS</span>
+            <h2>Clarity creates confidence.</h2>
+            <p>We believe the best digital experiences make complex journeys feel simple.</p>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <p>READY TO CONNECT?</p>
+            <h2>Let's create something meaningful.</h2>
+            <a href="mailto:hello@example.com">Get in touch <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">NEXUS<span>.</span></a>
+        <p>Interactive navigation experience.</p>
+        <span>© 2026 NEXUS STUDIO</span>
+    </footer>
+
+</body>
+</html>
