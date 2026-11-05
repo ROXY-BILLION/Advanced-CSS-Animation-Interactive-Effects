@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101a20">
+
+    <title>VELORA | Discover the Extraordinary</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="hero" id="home">
+
+        <!-- Browser-Hosted Background Video -->
+        <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+        >
+            <source
+                src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                type="video/mp4"
+            >
+            Your browser does not support the video element.
+        </video>
+
+        <!-- Video Overlay -->
+        <div class="video-overlay"></div>
+
+        <!-- Navigation -->
+        <header class="header">
+            <a href="#home" class="logo">VELORA<span>.</span></a>
+
+            <nav class="navigation" id="navigation">
+                <a href="#home">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#destinations" class="header-button">
+                Explore Places
+            </a>
+
+            <button class="menu-button" id="menuButton" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <!-- Hero Content -->
+        <section class="hero-content">
+
+            <div class="hero-label">
+                <span class="label-line"></span>
+                <p>EXPERIENCE THE EXTRAORDINARY</p>
+            </div>
+
+            <h1>
+                Escape the
+                <span>Ordinary.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover extraordinary destinations, breathtaking
+                landscapes and unforgettable journeys.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#destinations" class="primary-button">
+                    Discover Destinations
+                </a>
+
+                <a href="#experience" class="text-button">
+                    Our Experience <span>↗</span>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Video Information -->
+        <div class="video-caption">
+            <span>01 — THE WORLD IS WAITING</span>
+            <span>ENDLESS POSSIBILITIES</span>
+        </div>
+
+        <!-- Bottom Information -->
+        <footer class="hero-footer" id="contact">
+            <div class="location">
+                <span class="location-dot"></span>
+                <p>YOUR NEXT JOURNEY STARTS HERE</p>
+            </div>
+
+            <a href="#destinations" class="scroll-link">
+                SCROLL TO EXPLORE ↓
+            </a>
+        </footer>
+
+    </main>
+
+    <!-- Supporting Content -->
+    <section class="destination-section" id="destinations">
+        <p class="section-label">FIND YOUR ESCAPE</p>
+        <h2>Some places stay with you forever.</h2>
+        <p>Explore the world beyond your imagination.</p>
+    </section>
+
+    <section class="experience-section" id="experience">
+        <h2>Travel differently.</h2>
+        <p>Discover experiences designed to inspire.</p>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
